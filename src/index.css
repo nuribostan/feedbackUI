@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  background-color: #140942;
+  font-family: 'Archivo', sans-serif;
+  font-size: 16px;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.header {
+  font-size: 2rem;
+  color: #fff;
+}
+
+.card {
+  position: relative;
+  background-color: #e3e2e2;
+  color: black;
+  border-radius: 40px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.9);
+  border: 1px solid #000000;
+  padding: 4rem;
+  margin: 2rem;
+  max-width: 55rem;
+}
+
+.feedbackForm h2{
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border: 1px solid #000000;
+  border-radius: 8px;
+}
+
+.inputMessage {
+  background-color: #e3e2e2;
+  border: none;
+  padding: .8rem 0;
+  margin: 0rem 1rem;
+}
+
+.inputMessage:focus {
+  outline: none;
+}
+
+.inputButton {
+  border-radius: 8px;
+  padding: .6rem 1.5rem;
+  margin: 1rem 0rem;
+  background-color: #140942;
+  color: #fff;
+  font-size: 1.5rem;
+  cursor: pointer;
+  margin-right: 1rem;
+}
+
+
+.inputButton-primary {
+  background-color: #140942;
+  color: #fff;
+}
+
+.inputButton-secondary {
+  background-color: rgb(221, 69, 69);
+  color: #fff;
+}
+
+.inputButton-primary:hover {
+  background-color: #0a0421;
+  color: #fff;
+}
+
+.inputButton-secondary:hover {
+  background-color: rgb(108, 34, 34);
+  color: #fff;
+}
+
+.inputButton:active {
+  transform: scale(0.95);
+}
+
+.inputButton:disabled{
+  background-color: #8f8f8f;
+  color: #000000;
+  cursor: not-allowed;
+}
+
+.numDisplay {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  transform: translate(-30%, -30%);
+  background-color: rgb(221, 69, 69);
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  width: 5rem;
+  height: 5rem;
+  font-size: 2rem;
+}
+
+.deleteFeedback {
+  position: absolute;
+  top: 10%;
+  right: 4%;
+  background-color: transparent;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  color: rgb(221, 69, 69);
+}
+
+.feedbackDisplay {
+  margin: 2rem;
+  font-size: 2rem;
+  letter-spacing: .5px;
+  text-align: justify;
+  line-height: 1.3;
+  font-weight: 500;
+}
+
+
+.stats{
+  display: flex;
+  flex-direction: row;
+  gap: 22rem;
+  align-items: center;
+  font-size: 1.5rem;
+}
+
+.alertMessage {
+  font-size: 1.5rem;
+  color: rgb(141, 0, 28);
+  text-align: center;
+  margin-top: 2rem;
+  font-weight: 500;
+}
+
+.alertCount {
+  font-size: 1.5rem;
+  color: rgb(141, 0, 28);
+  text-align: center;
+  margin-top: 1rem;
+  font-weight: 500;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 30px 0 40px;
+  padding: 1rem;
+  flex-wrap: wrap;
+}
+
+.rating li {
+  position: relative;
+  background: #f4f4f4;
+  width: 50px;
+  height: 50px;
+  padding: 10px;
+  text-align: center;
+  border-radius: 50%;
+  font-size: 19px;
+  border: 1px #eee solid;
+  transition: 0.3s;
+  list-style: none;
+  margin: .2rem .5rem;
+}
+
+.rating li label {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 50px;
+  height: 50px;
+  padding: 10px;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+.rating li:hover {
+  background: #ff6a95;
+  color: #fff;
+}
+
+[type='radio'] {
+  opacity: 0;
+}
+
+[type='radio']:checked ~ label {
+  background: #ff6a95;
+  color: #fff;
+}
+
+
+@media screen and (min-width : 768) {
+
+  html{
+    font-size: 8px;
+  }
+  
+}
