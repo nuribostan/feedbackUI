@@ -60,6 +60,13 @@ body {
   border: none;
   padding: .8rem 0;
   margin: 0rem 1rem;
+  resize: none;
+  height: auto;
+  overflow-y: hidden;
+}
+
+.inputMessage::placeholder {
+  font-size: 2rem;
 }
 
 .inputMessage:focus {
@@ -131,9 +138,33 @@ body {
   right: 4%;
   background-color: transparent;
   border: none;
-  font-size: 1rem;
+  font-size: 1.4rem;
   cursor: pointer;
   color: rgb(221, 69, 69);
+}
+
+.editFeedback {
+  position: absolute;
+  top: 10%;
+  right: 10%;
+  background-color: transparent;
+  border: none;
+  font-size: 1.4rem;
+  cursor: pointer;
+  color: rgb(221, 69, 69);
+}
+
+.feedbackEdit{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  height: 300px;
+  background-color: #e3e2e2;
 }
 
 .feedbackDisplay {
@@ -148,10 +179,11 @@ body {
 
 .stats{
   display: flex;
+  justify-content: space-between;
   flex-direction: row;
-  gap: 22rem;
   align-items: center;
   font-size: 1.5rem;
+  margin: 0 5rem;
 }
 
 .alertMessage {
@@ -219,6 +251,12 @@ body {
   background: #ff6a95;
   color: #fff;
 }
+
+.active {
+  background: #ff6a95;
+  color: #fff;
+}
+
 
 
 @media screen and (min-width : 768) {
